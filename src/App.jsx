@@ -1,7 +1,12 @@
 import React from "react";
+import MemeGen from "./components/MemeGen";
 
 const App = () => {
-  return <div></div>;
+  return (
+    <>
+      <MemeGen />
+    </>
+  );
 };
 
 export default App;
