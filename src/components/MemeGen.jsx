@@ -11,7 +11,7 @@ const MemeGen = () => {
         <p className="text-lg text-gray-100">React & Tailwind</p>
       </nav>
 
-      <div className="flex flex-col items-center mt-4 py-10 rounded-b-lg">
+      <div className="flex flex-col items-center mt-4 py-10 ">
         <div className="flex items-center gap-6 mb-6">
           <input
             type="text"
@@ -26,9 +26,14 @@ const MemeGen = () => {
         </div>
 
         {/* button full width under both inputs */}
-        <button className="w-[600px] py-3 px-5 text-xl rounded border flex justify-center items-center gap-3 hover:bg-cyan-200 transition">
+        <button className="w-[600px] py-3 px-5 text-xl rounded border cursor-pointer flex justify-center items-center gap-3 hover:bg-amber-100 transition">
           Get a new meme image <FaRegImage />
         </button>
+
+        {/* image frame placeholder */}
+        <div className="bg-amber-100 mt-6 w-[600px] h-[400px] rounded border flex justify-center items-center text-xl font-semibold text-gray-700">
+          Meme Image Will Appear Here
+        </div>
       </div>
     </div>
   );
